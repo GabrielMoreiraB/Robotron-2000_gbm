@@ -1,7 +1,7 @@
 const controle = document.querySelectorAll('[data-controle]');
 const estatistica = document.querySelectorAll('[data-estatistica]');
-console.log(estatistica);
 
+console.log(cor);
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -61,3 +61,8 @@ function atualizaDados(peca){
         
     })
 }
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/cores/"+ cor +".png";
+    
+ }

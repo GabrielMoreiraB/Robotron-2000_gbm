@@ -14,8 +14,19 @@
 </head>
 <body>
     <main>
-        <section class="robotron">
-            <img class="robo" src="img/Robotron 2000 - Vermelho/robotron.png" alt="Robotron" id="robotron">
+        <section class="selecaoDeCores">
+            <div class="container">
+                <ul class="listaDeCores box">
+                    <li class="cores" data-coresBtn><img data-cores src="img/amarelo.png"></li>
+                    <li class="cores" data-coresBtn><img data-cores src="img/branco.png"></li>
+                    <li class="cores" data-coresBtn><img data-cores src="img/preto.png"></li>
+                    <li class="cores" data-coresBtn><img data-cores src="img/rosa.png"></li>
+                    <li class="cores" data-coresBtn><img data-cores src="img/vermelho.png"></li>
+                    <li class="cores" data-coresBtn><img data-cores src="img/azul.png"></li>
+                </ul>
+            </div>
+        </section>
+            <img class="robo" src="img/cores/vermelho.png" alt="Robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
         </section>
 
@@ -95,11 +106,6 @@
                     </div>
                 </div>
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
-                <select name="cor" id="cor">
-                    <option value="hora">Manhã</option>
-                    <option value="hora">Tarde</option>
-                    <option value="hora">Noite</option>
-                </select>
             </form>
         </section>
     </main>
