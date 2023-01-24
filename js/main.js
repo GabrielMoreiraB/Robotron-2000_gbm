@@ -1,7 +1,11 @@
 const controle = document.querySelectorAll('[data-controle]');
 const estatistica = document.querySelectorAll('[data-estatistica]');
 
-console.log(cor);
+
+const robotron = document.querySelector("[data-robotron]");
+const botaoCores = document.querySelectorAll("[data-cores]");
+
+
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -62,7 +66,11 @@ function atualizaDados(peca){
     })
 }
 
-function trocaImagem(cor){
-    document.querySelector(".robo").src="img/cores/"+ cor +".png";
-    
- }
+botaoCores.forEach((cor) => {
+    cor.addEventListener('click', (evento) =>{
+        //console.log(evento.target.src);
+        robotron.src = evento.target.src
+    })
+})
+
+
